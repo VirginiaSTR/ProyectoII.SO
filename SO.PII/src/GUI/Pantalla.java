@@ -43,7 +43,7 @@ public class Pantalla extends javax.swing.JFrame {
     private DefaultMutableTreeNode nucleo;
     private int idSiguiente;
     private String modoSistema;
-    private ArrayList<String> listaLogOperaciones = new ArrayList<>();
+    private ArrayList<String> listaRegistroOperaciones = new ArrayList<>();
     
     
     public Pantalla(Lista<Archivo> listaArchivos) {
@@ -575,7 +575,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
                 // Crear registro
                 String registro = "\n   El usuario " + this.modoSistema + " leyó el archivo " + archivo.getNombre() + " (ID " + archivo.getId() + "), Fecha/Hora: " + fechaHora;
-                listaLogOperaciones.add(registro);
+                listaRegistroOperaciones.add(registro);
                 
             } else {
                 JOptionPane.showMessageDialog(this, "El nodo no contiene un archivo válido o es una carpeta");
@@ -673,7 +673,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
                                     // Crear registro
                                     String registro = "\n   Se creó el archivo " + nombre + " (ID " + asignarID() + "), Fecha/Hora: " + fechaHora;
-                                    listaLogOperaciones.add(registro);
+                                    listaRegistroOperaciones.add(registro);
                                     
                                     
                                     if(verTree){
@@ -725,7 +725,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
             // Crear registro
             String registro = "\n   Se creó la carpeta " + nombre + ", Fecha/Hora: " + fechaHora;
-            listaLogOperaciones.add(registro);
+            listaRegistroOperaciones.add(registro);
             
             if (nodoSeleccionado == null) {
                 // Si no hay nodo seleccionado, agrega a la raíz
@@ -836,7 +836,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
                 // Crear registro
                 String registro = "\n   Se renombró el archivo " + contenidoActual + " (ID " + archivo.getId() +  ") a " + archivo.getNombre() + ", Fecha/Hora: " + fechaHora;
-                listaLogOperaciones.add(registro);
+                listaRegistroOperaciones.add(registro);
                 actualizarTabla();
             }
             
@@ -859,7 +859,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
                 // Crear registro
                 String registro = "\n   Se renombró la carpeta " + nombreAnterior + " a " + nuevoNombre + ", Fecha/Hora: " + fechaHora;
-                listaLogOperaciones.add(registro);
+                listaRegistroOperaciones.add(registro);
             }
             
         }
@@ -899,7 +899,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
                 // Crear registro
                 String registro = "\n   Se modificó el archivo " + archivo.getNombre() + " (ID " + archivo.getId() + "), Fecha/Hora: " + fechaHora;
-                listaLogOperaciones.add(registro);
+                listaRegistroOperaciones.add(registro);
 
                 actualizarTabla();
             }
@@ -931,7 +931,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
             // Crear registro
             String registro = "\n   Cambio de modo " + modoSistema + " a modo " + modo + ", Fecha/Hora: " + fechaHora;
-            listaLogOperaciones.add(registro);
+            listaRegistroOperaciones.add(registro);
             
             
             if(modo == "Administrador"){
@@ -965,7 +965,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
     private void btnLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogActionPerformed
         
         StringBuilder sb = new StringBuilder();
-        for (String registro : listaLogOperaciones) {
+        for (String registro : listaRegistroOperaciones) {
             sb.append(registro).append("\n");
         }
 
@@ -1005,7 +1005,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
         // Crear registro
         String registro = "\n   Se eliminó la carpeta " + carpetaNodo.getUserObject().toString() + ", Fecha/Hora: " + fechaHora;
-        listaLogOperaciones.add(registro);
+        listaRegistroOperaciones.add(registro);
         
         if (carpetaNodo instanceof DefaultMutableTreeNode) {
             Enumeration<TreeNode> hijos = carpetaNodo.children();
@@ -1057,7 +1057,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
             // Crear registro
             String registro = "\n   Se eliminó el archivo " + archivo.getNombre() + " (ID " + archivo.getId() + "), Fecha/Hora: " + fechaHora;
-            listaLogOperaciones.add(registro);
+            listaRegistroOperaciones.add(registro);
         }
     }
 
@@ -1083,7 +1083,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
             // Crear registro
             String registro = "\n   Se exportó un lote de "+listaArchivos.size()+" archivos, Fecha/Hora: " + fechaHora;
-            listaLogOperaciones.add(registro);
+            listaRegistroOperaciones.add(registro);
 //            JOptionPane.showMessageDialog(this,"Archivos exportados exitosamente.");
         } catch (IOException e) {
             System.out.println("Ocurrió un error al exportar el archivo: "+e);
@@ -1106,7 +1106,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
             // Crear registro
             String registro = "\n   Se importó un lote de "+listaArchivos.size()+" archivos, Fecha/Hora: " + fechaHora;
-            listaLogOperaciones.add(registro);
+            listaRegistroOperaciones.add(registro);
 //            JOptionPane.showMessageDialog(this,"Archivos impotados exitosamente.");
             llenarTablaArchivos();
             actualizarTabla();
@@ -1143,7 +1143,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
         }
     }
     
-    private void exportarLogOperaciones() {
+    private void exportarRegistroOperaciones() {
         String carpetaExportaciones = "src/Exportaciones/";
         String prefijoArchivo = "Logs_";
         String extensionArchivo = ".txt";
@@ -1178,7 +1178,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
         String rutaArchivo = carpetaExportaciones + nuevoArchivoNombre;
 
         StringBuilder sb = new StringBuilder();
-        for (String registro : listaLogOperaciones) {
+        for (String registro : listaRegistroOperaciones) {
             sb.append(registro).append("\n");
         }
 
