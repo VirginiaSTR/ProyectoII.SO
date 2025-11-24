@@ -969,7 +969,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
             sb.append(registro).append("\n");
         }
 
-        LogFrame logFrame = new LogFrame(); // Crea una instancia del LogFrame
+        RegFrame logFrame = new RegFrame(); // Crea una instancia del LogFrame
         logFrame.logTextArea.setText(sb.toString()); // Establece el texto del JTextArea
         logFrame.setVisible(true); // Hace visible el JFrame
         
@@ -992,7 +992,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
     }//GEN-LAST:event_btnExportarArbolActionPerformed
 
     private void btnLogBackupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogBackupActionPerformed
-        exportarLogOperaciones();
+        exportarRegistroOperaciones();
     }//GEN-LAST:event_btnLogBackupActionPerformed
 
     
@@ -1145,7 +1145,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
     
     private void exportarRegistroOperaciones() {
         String carpetaExportaciones = "src/Exportaciones/";
-        String prefijoArchivo = "Logs_";
+        String prefijoArchivo = "Reg_";
         String extensionArchivo = ".txt";
 
         int numeroMaximo = 0;
@@ -1185,10 +1185,10 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
         try (FileWriter writer = new FileWriter(rutaArchivo)) {
             writer.write(sb.toString());
             writer.flush();
-            System.out.println("Log exportado correctamente en: " + rutaArchivo);
+            System.out.println("Registro exportado correctamente en: " + rutaArchivo);
             JOptionPane.showMessageDialog(this, "Log exportado exitosamente en:\n" + rutaArchivo);
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(this, "Ocurrió un error al exportar el log.");
+            JOptionPane.showMessageDialog(this, "Ocurrió un error al exportar el registro.");
         }
     }
 
