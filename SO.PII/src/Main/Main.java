@@ -4,6 +4,10 @@
  */
 package Main;
 
+import GUI.Pantalla;
+import Clases.Archivo;
+import Estructuras.Lista;
+
 /**
  *
  * @author VirginiaT
@@ -14,7 +18,12 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Lista<Archivo> listaArchivos = new Lista<>("Archivos");       
+        Pantalla pantalla1 = new Pantalla(listaArchivos);
+        pantalla1.setVisible(true);
     }
     
 }
+
+
