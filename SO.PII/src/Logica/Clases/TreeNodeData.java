@@ -2,20 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Clases;
+package Logica.Clases;
 
-import Estructuras.Lista;
+import Logica.Estructuras.Lista;
 
 /**
  *
  * @author VirginiaT
  */
-
-public class DataTreeNode {
-    
+public class TreeNodeData {
     private String nombre;
     private boolean esCarpeta;
-    private Lista<DataTreeNode> hijos;
+    private Lista<TreeNodeData> hijos;
     
     // Datos específicos para nodos de tipo Archivo
     private String contenido;
@@ -24,14 +22,14 @@ public class DataTreeNode {
     private int posicionj;
     private String color;
 
-    public DataTreeNode(String nombre, boolean esCarpeta) {
+    public TreeNodeData(String nombre, boolean esCarpeta) {
         this.nombre = nombre;
         this.esCarpeta = esCarpeta;
         this.hijos = new Lista<>("Hijos");
     }
 
     // Constructor para nodos de tipo Archivo
-    public DataTreeNode(Archivo archivo) {
+    public TreeNodeData(Archivo archivo) {
         this.nombre = archivo.getNombre();
         this.esCarpeta = false;
         this.hijos = new Lista<>("Hijos");
@@ -53,11 +51,11 @@ public class DataTreeNode {
         return esCarpeta;
     }
 
-    public Lista<DataTreeNode> getHijos() {
+    public Lista<TreeNodeData> getHijos() {
         return hijos;
     }
 
-    public void agregarHijo(DataTreeNode hijo) {
+    public void agregarHijo(TreeNodeData hijo) {
         this.hijos.append(hijo);
     }
 
@@ -80,5 +78,4 @@ public class DataTreeNode {
     public String getColor() {
         return color;
     }
-    
 }

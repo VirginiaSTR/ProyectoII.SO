@@ -7,9 +7,9 @@ package GUI;
 import javax.swing.JOptionPane;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
-import Estructuras.Lista;
-import Clases.Archivo;
-import Clases.DataTreeNode;
+import Logica.Estructuras.Lista;
+import Logica.Clases.Archivo;
+import Logica.Clases.TreeNodeData;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Point;
@@ -36,21 +36,22 @@ import java.io.IOException;
  *
  * @author VirginiaT
  */
+
 public class Pantalla extends javax.swing.JFrame {
 
     
     private Lista<Archivo> listaArchivos;
-    private DefaultMutableTreeNode nucleo;
+    private DefaultMutableTreeNode raiz;
     private int idSiguiente;
     private String modoSistema;
-    private ArrayList<String> listaRegistroOperaciones = new ArrayList<>();
+    private ArrayList<String> listaLogOperaciones = new ArrayList<>();
     
     
     public Pantalla(Lista<Archivo> listaArchivos) {
         initComponents();
         
-        nucleo = new DefaultMutableTreeNode("Núcleo");
-        treeDirectorio = new DefaultTreeModel(nucleo);
+        raiz = new DefaultMutableTreeNode("Raíz");
+        treeDirectorio = new DefaultTreeModel(raiz);
         jTree1.setModel(treeDirectorio);
         this.listaArchivos = listaArchivos;
         idSiguiente = obtenerIdMasGrande() + 1;
@@ -106,10 +107,8 @@ public class Pantalla extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
         jPanel1.setLayout(null);
 
-        SDtable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         SDtable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"", "", "", "", "", "", "", ""},
@@ -152,14 +151,13 @@ public class Pantalla extends javax.swing.JFrame {
         }
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(20, 380, 560, 140);
+        jScrollPane1.setBounds(30, 370, 560, 140);
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Estado del SD");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(30, 340, 130, 21);
+        jLabel1.setBounds(30, 330, 130, 25);
 
-        jTree1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jTree1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTree1MouseClicked(evt);
@@ -168,29 +166,29 @@ public class Pantalla extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTree1);
 
         jPanel1.add(jScrollPane2);
-        jScrollPane2.setBounds(30, 70, 440, 210);
+        jScrollPane2.setBounds(30, 60, 440, 210);
 
-        btnCrearArchivo.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnCrearArchivo.setText("Crear Archivo");
+        btnCrearArchivo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnCrearArchivo.setText("Crear archivo");
         btnCrearArchivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCrearArchivoActionPerformed(evt);
             }
         });
         jPanel1.add(btnCrearArchivo);
-        btnCrearArchivo.setBounds(490, 80, 180, 30);
+        btnCrearArchivo.setBounds(480, 80, 170, 30);
 
-        btnCrearCarpeta.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnCrearCarpeta.setText("Crear Carpeta");
+        btnCrearCarpeta.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnCrearCarpeta.setText("Crear carpeta");
         btnCrearCarpeta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCrearCarpetaActionPerformed(evt);
             }
         });
         jPanel1.add(btnCrearCarpeta);
-        btnCrearCarpeta.setBounds(490, 40, 180, 30);
+        btnCrearCarpeta.setBounds(480, 40, 170, 30);
 
-        btnEliminar.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnEliminar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnEliminar.setText("Eliminar");
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -198,29 +196,29 @@ public class Pantalla extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnEliminar);
-        btnEliminar.setBounds(490, 120, 180, 30);
+        btnEliminar.setBounds(480, 120, 170, 30);
 
-        btnModificarContenido.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnModificarContenido.setText("Modificar Contenido");
+        btnModificarContenido.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnModificarContenido.setText("Modificar contenido");
         btnModificarContenido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnModificarContenidoActionPerformed(evt);
             }
         });
         jPanel1.add(btnModificarContenido);
-        btnModificarContenido.setBounds(490, 200, 180, 30);
+        btnModificarContenido.setBounds(480, 200, 170, 30);
 
-        btnModificarNombre.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnModificarNombre.setText("Modificar Nombre");
+        btnModificarNombre.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnModificarNombre.setText("Modificar nombre");
         btnModificarNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnModificarNombreActionPerformed(evt);
             }
         });
         jPanel1.add(btnModificarNombre);
-        btnModificarNombre.setBounds(490, 160, 180, 30);
+        btnModificarNombre.setBounds(480, 160, 170, 30);
 
-        btnModo.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnModo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnModo.setText("Modo");
         btnModo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -230,17 +228,17 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(btnModo);
         btnModo.setBounds(30, 20, 100, 30);
 
-        btnLog.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnLog.setText("Registro de Operaciones");
+        btnLog.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnLog.setText("Log de operaciones");
         btnLog.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLogActionPerformed(evt);
             }
         });
         jPanel1.add(btnLog);
-        btnLog.setBounds(490, 240, 180, 30);
+        btnLog.setBounds(480, 240, 170, 30);
 
-        btnImportarArchivos.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnImportarArchivos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnImportarArchivos.setText("Importar Archivos");
         btnImportarArchivos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -248,9 +246,9 @@ public class Pantalla extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnImportarArchivos);
-        btnImportarArchivos.setBounds(860, 530, 170, 30);
+        btnImportarArchivos.setBounds(940, 520, 170, 30);
 
-        btnExportarArchivos.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnExportarArchivos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnExportarArchivos.setText("Exportar Archivos");
         btnExportarArchivos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -258,9 +256,9 @@ public class Pantalla extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnExportarArchivos);
-        btnExportarArchivos.setBounds(680, 530, 170, 30);
+        btnExportarArchivos.setBounds(760, 520, 170, 30);
 
-        btnImportarArbol.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnImportarArbol.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnImportarArbol.setText("Importar JTree");
         btnImportarArbol.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -268,9 +266,9 @@ public class Pantalla extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnImportarArbol);
-        btnImportarArbol.setBounds(250, 290, 170, 30);
+        btnImportarArbol.setBounds(220, 280, 170, 30);
 
-        btnExportarArbol.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnExportarArbol.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnExportarArbol.setText("Exportar JTree");
         btnExportarArbol.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -278,9 +276,8 @@ public class Pantalla extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnExportarArbol);
-        btnExportarArbol.setBounds(70, 290, 170, 30);
+        btnExportarArbol.setBounds(40, 280, 170, 30);
 
-        tablaAsignacionArchivos.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         tablaAsignacionArchivos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -303,23 +300,22 @@ public class Pantalla extends javax.swing.JFrame {
         jScrollPane3.setViewportView(tablaAsignacionArchivos);
 
         jPanel1.add(jScrollPane3);
-        jScrollPane3.setBounds(600, 380, 500, 140);
+        jScrollPane3.setBounds(610, 370, 500, 140);
 
-        btnLogBackup.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnLogBackup.setText("Registro Respaldado");
+        btnLogBackup.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnLogBackup.setText("Respaldar Log");
         btnLogBackup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLogBackupActionPerformed(evt);
             }
         });
         jPanel1.add(btnLogBackup);
-        btnLogBackup.setBounds(490, 280, 180, 30);
+        btnLogBackup.setBounds(480, 280, 170, 30);
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos Gráficos/thumbsUp.jpg"))); // NOI18N
         jLabel2.setText("jLabel2");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(780, 60, 240, 240);
+        jLabel2.setBounds(760, 60, 240, 240);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -410,61 +406,61 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
     }
 
     switch (nombreColor.toLowerCase()) {
-        case "Negro":
+        case "negro":
             return Color.BLACK;
-        case "Blanco":
+        case "blanco":
             return Color.WHITE;
-        case "Rojo":
+        case "rojo":
             return Color.RED;
-        case "Rojo claro":
+        case "rojoclaro":
             return new Color(255, 182, 193); // LightPink
-        case "Rojo Oscuro":
+        case "rojooscuro":
             return new Color(139, 0, 0); // DarkRed
-        case "Verde":
+        case "verde":
             return Color.GREEN;
-        case "Verde claro":
+        case "verdeclaro":
             return new Color(144, 238, 144); // LightGreen
-        case "Verde oscuro":
+        case "verdeoscuro":
             return new Color(0, 100, 0); // DarkGreen
-        case "Azul":
+        case "azul":
             return Color.BLUE;
-        case "Azul claro":
+        case "azulclaro":
             return new Color(173, 216, 230); // LightBlue
-        case "Azul oscuro":
+        case "azuloscuro":
             return new Color(0, 0, 139); // DarkBlue
-        case "Amarillo":
+        case "amarillo":
             return Color.YELLOW;
-        case "Amarillo claro":
+        case "amarilloclaro":
             return new Color(255, 255, 224); // LightYellow
-        case "Amarillo Oscuro":
+        case "amarillooscuro":
             return new Color(255, 215, 0); // Gold
-        case "Cyan":
+        case "cyan":
             return Color.CYAN;
-        case "Cyan claro":
+        case "cyanclaro":
             return new Color(224, 255, 255); // LightCyan
-        case "Cyan oscuro":
+        case "cyanoscuro":
             return new Color(0, 139, 139); // DarkCyan
-        case "Magenta":
+        case "magenta":
             return Color.MAGENTA;
-        case "Magenta claro":
+        case "magentaclaro":
             return new Color(238, 130, 238); // Violet
-        case "Magenta oscuro":
+        case "magentaoscuro":
             return new Color(139, 0, 139); // DarkMagenta
-        case "Gris":
-            return Color.GRAY;
-        case "Gris claro":
-            return Color.LIGHT_GRAY;
-        case "Gris oscuro":
+        case "grisoscuro":
             return Color.DARK_GRAY;
-        case "Naranja":
+        case "gris":
+            return Color.GRAY;
+        case "grisclaro":
+            return Color.LIGHT_GRAY;
+        case "naranja":
             return Color.ORANGE;
-        case "Naranja claro":
+        case "naranjaclaro":
             return new Color(255, 228, 196); // Bisque
-        case "Naranja oscuro":
+        case "naranjaoscuro":
             return new Color(255, 140, 0); // DarkOrange
-        case "Rosa":
+        case "rosa":
             return Color.PINK;
-        case "Rosa oscuro":
+        case "rosaoscuro":
             return new Color(219, 112, 147); // MediumVioletRed
         default:
             return Color.BLACK; // Color por defecto si no se encuentra el nombre
@@ -575,7 +571,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
                 // Crear registro
                 String registro = "\n   El usuario " + this.modoSistema + " leyó el archivo " + archivo.getNombre() + " (ID " + archivo.getId() + "), Fecha/Hora: " + fechaHora;
-                listaRegistroOperaciones.add(registro);
+                listaLogOperaciones.add(registro);
                 
             } else {
                 JOptionPane.showMessageDialog(this, "El nodo no contiene un archivo válido o es una carpeta");
@@ -635,11 +631,11 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
                     if (longitud > 0) {
                         
                         String[] colores = {
-                            "Negro", "Blanco", "Rojo", "Rojo claro", "Rojo Oscuro",
-                            "Verde", "Verde claro", "Verde oscuro", "Azul", "Azul claro", "Azul oscuro",
-                            "Amarillo", "Amarillo claro", "Amarillo Oscuro", "Cyan", "Cyan claro", "Cyan oscuro",
-                            "Magenta", "Magenta claro", "Magenta oscuro", "Gris", "Gris claro", "Gris oscuro",
-                            "Naranja", "Naranja claro", "Naranja oscuro", "Rosa", "Rosa oscuro"
+                            "negro", "blanco", "rojo", "rojoclaro", "rojooscuro",
+                            "verde", "verdeclaro", "verdeoscuro", "azul", "azulclaro", "azuloscuro",
+                            "amarillo", "amarilloclaro", "amarillooscuro", "cyan", "cyanclaro", "cyanoscuro",
+                            "magenta", "magentaclaro", "magentaoscuro", "grisoscuro", "gris", "grisclaro",
+                            "naranja", "naranjaclaro", "naranjaoscuro", "rosa", "rosaoscuro"
                         };
 
                         JComboBox<String> colorComboBox = new JComboBox<>(colores);
@@ -673,7 +669,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
                                     // Crear registro
                                     String registro = "\n   Se creó el archivo " + nombre + " (ID " + asignarID() + "), Fecha/Hora: " + fechaHora;
-                                    listaRegistroOperaciones.add(registro);
+                                    listaLogOperaciones.add(registro);
                                     
                                     
                                     if(verTree){
@@ -725,7 +721,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
             // Crear registro
             String registro = "\n   Se creó la carpeta " + nombre + ", Fecha/Hora: " + fechaHora;
-            listaRegistroOperaciones.add(registro);
+            listaLogOperaciones.add(registro);
             
             if (nodoSeleccionado == null) {
                 // Si no hay nodo seleccionado, agrega a la raíz
@@ -836,7 +832,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
                 // Crear registro
                 String registro = "\n   Se renombró el archivo " + contenidoActual + " (ID " + archivo.getId() +  ") a " + archivo.getNombre() + ", Fecha/Hora: " + fechaHora;
-                listaRegistroOperaciones.add(registro);
+                listaLogOperaciones.add(registro);
                 actualizarTabla();
             }
             
@@ -859,7 +855,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
                 // Crear registro
                 String registro = "\n   Se renombró la carpeta " + nombreAnterior + " a " + nuevoNombre + ", Fecha/Hora: " + fechaHora;
-                listaRegistroOperaciones.add(registro);
+                listaLogOperaciones.add(registro);
             }
             
         }
@@ -899,7 +895,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
                 // Crear registro
                 String registro = "\n   Se modificó el archivo " + archivo.getNombre() + " (ID " + archivo.getId() + "), Fecha/Hora: " + fechaHora;
-                listaRegistroOperaciones.add(registro);
+                listaLogOperaciones.add(registro);
 
                 actualizarTabla();
             }
@@ -931,7 +927,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
             // Crear registro
             String registro = "\n   Cambio de modo " + modoSistema + " a modo " + modo + ", Fecha/Hora: " + fechaHora;
-            listaRegistroOperaciones.add(registro);
+            listaLogOperaciones.add(registro);
             
             
             if(modo == "Administrador"){
@@ -965,13 +961,13 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
     private void btnLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogActionPerformed
         
         StringBuilder sb = new StringBuilder();
-        for (String registro : listaRegistroOperaciones) {
+        for (String registro : listaLogOperaciones) {
             sb.append(registro).append("\n");
         }
 
-        RegFrame RegFrame = new RegFrame(); // Crea una instancia del RegFrame
-        RegFrame.logTextArea.setText(sb.toString()); // Establece el texto del JTextArea
-        RegFrame.setVisible(true); // Hace visible el JFrame
+        LogFrame logFrame = new LogFrame(); // Crea una instancia del LogFrame
+        logFrame.logTextArea.setText(sb.toString()); // Establece el texto del JTextArea
+        logFrame.setVisible(true); // Hace visible el JFrame
         
     }//GEN-LAST:event_btnLogActionPerformed
 
@@ -992,7 +988,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
     }//GEN-LAST:event_btnExportarArbolActionPerformed
 
     private void btnLogBackupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogBackupActionPerformed
-        exportarRegistroOperaciones();
+        exportarLogOperaciones();
     }//GEN-LAST:event_btnLogBackupActionPerformed
 
     
@@ -1005,7 +1001,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
         // Crear registro
         String registro = "\n   Se eliminó la carpeta " + carpetaNodo.getUserObject().toString() + ", Fecha/Hora: " + fechaHora;
-        listaRegistroOperaciones.add(registro);
+        listaLogOperaciones.add(registro);
         
         if (carpetaNodo instanceof DefaultMutableTreeNode) {
             Enumeration<TreeNode> hijos = carpetaNodo.children();
@@ -1057,7 +1053,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
             // Crear registro
             String registro = "\n   Se eliminó el archivo " + archivo.getNombre() + " (ID " + archivo.getId() + "), Fecha/Hora: " + fechaHora;
-            listaRegistroOperaciones.add(registro);
+            listaLogOperaciones.add(registro);
         }
     }
 
@@ -1083,7 +1079,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
             // Crear registro
             String registro = "\n   Se exportó un lote de "+listaArchivos.size()+" archivos, Fecha/Hora: " + fechaHora;
-            listaRegistroOperaciones.add(registro);
+            listaLogOperaciones.add(registro);
 //            JOptionPane.showMessageDialog(this,"Archivos exportados exitosamente.");
         } catch (IOException e) {
             System.out.println("Ocurrió un error al exportar el archivo: "+e);
@@ -1106,7 +1102,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
             // Crear registro
             String registro = "\n   Se importó un lote de "+listaArchivos.size()+" archivos, Fecha/Hora: " + fechaHora;
-            listaRegistroOperaciones.add(registro);
+            listaLogOperaciones.add(registro);
 //            JOptionPane.showMessageDialog(this,"Archivos impotados exitosamente.");
             llenarTablaArchivos();
             actualizarTabla();
@@ -1143,9 +1139,9 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
         }
     }
     
-    private void exportarRegistroOperaciones() {
+    private void exportarLogOperaciones() {
         String carpetaExportaciones = "src/Exportaciones/";
-        String prefijoArchivo = "Reg_";
+        String prefijoArchivo = "Logs_";
         String extensionArchivo = ".txt";
 
         int numeroMaximo = 0;
@@ -1178,31 +1174,31 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
         String rutaArchivo = carpetaExportaciones + nuevoArchivoNombre;
 
         StringBuilder sb = new StringBuilder();
-        for (String registro : listaRegistroOperaciones) {
+        for (String registro : listaLogOperaciones) {
             sb.append(registro).append("\n");
         }
 
         try (FileWriter writer = new FileWriter(rutaArchivo)) {
             writer.write(sb.toString());
             writer.flush();
-            System.out.println("Registro exportado correctamente en: " + rutaArchivo);
+            System.out.println("Log exportado correctamente en: " + rutaArchivo);
             JOptionPane.showMessageDialog(this, "Log exportado exitosamente en:\n" + rutaArchivo);
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(this, "Ocurrió un error al exportar el registro.");
+            JOptionPane.showMessageDialog(this, "Ocurrió un error al exportar el log.");
         }
     }
 
     
     // SECCIÓN RESPALDO ÁRBOL
     
-    private DataTreeNode convertirNodo(DefaultMutableTreeNode nodo) {
+    private TreeNodeData convertirNodo(DefaultMutableTreeNode nodo) {
         Object userObject = nodo.getUserObject();
 
         if (userObject instanceof Archivo) {
             Archivo archivo = (Archivo) userObject;
-            return new DataTreeNode(archivo); // Crear nodo serializable para archivo
+            return new TreeNodeData(archivo); // Crear nodo serializable para archivo
         } else {
-            DataTreeNode nodoData = new DataTreeNode(userObject.toString(), true); // Nodo carpeta
+            TreeNodeData nodoData = new TreeNodeData(userObject.toString(), true); // Nodo carpeta
 
             // Recorrer los hijos del nodo
             Enumeration<TreeNode> hijos = nodo.children();
@@ -1217,7 +1213,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
     
     private void exportarArbolJson() {
         // Exportar visualmente el árbol (estructura del JTree)
-        DataTreeNode raizData = convertirNodo((DefaultMutableTreeNode) treeDirectorio.getRoot());
+        TreeNodeData raizData = convertirNodo((DefaultMutableTreeNode) treeDirectorio.getRoot());
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String json = gson.toJson(raizData);
 
@@ -1237,7 +1233,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
     }
 
 
-    private DefaultMutableTreeNode reconstruirArbol(DataTreeNode nodoData) {
+    private DefaultMutableTreeNode reconstruirArbol(TreeNodeData nodoData) {
         DefaultMutableTreeNode nodo;
 
         if (!nodoData.isEsCarpeta()) {
@@ -1259,7 +1255,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
         // Recorrer los hijos y reconstruirlos recursivamente
         for (int i = 0; i < nodoData.getHijos().size(); i++) {
-            DataTreeNode hijoData = nodoData.getHijos().get(i);
+            TreeNodeData hijoData = nodoData.getHijos().get(i);
             nodo.add(reconstruirArbol(hijoData)); // Llamada recursiva
         }
 
@@ -1271,7 +1267,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
 
         try (FileReader reader = new FileReader(rutaArchivo)) {
             Gson gson = new Gson();
-            DataTreeNode raizData = gson.fromJson(reader, DataTreeNode.class);
+            TreeNodeData raizData = gson.fromJson(reader, TreeNodeData.class);
 
             // Reconstruir árbol
             DefaultMutableTreeNode nuevaRaiz = reconstruirArbol(raizData);

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Clases;
+package Logica.Clases;
 
 /**
  *
@@ -91,5 +91,8 @@ public class Archivo {
     public String toString() {
         return nombre; // Devuelve solo el nombre para mostrar en el JTree (lo que hace en realidad es que cada vez que el objeto es referenciado como una cadena, retorne esto)
     }
+    
+    
+    
     
 }

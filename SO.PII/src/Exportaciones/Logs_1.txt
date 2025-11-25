@@ -1,0 +1,62 @@
+
+   Cambio de modo Usuario a modo Administrador, Fecha/Hora: 2025-11-25 16:21:24
+
+   Se creó la carpeta AAAA, Fecha/Hora: 2025-11-25 16:21:41
+
+   Se creó la carpeta BBBB, Fecha/Hora: 2025-11-25 16:21:56
+
+   Se creó el archivo aaaa (ID 1), Fecha/Hora: 2025-11-25 16:22:19
+
+   Se creó el archivo aaaa (ID 1), Fecha/Hora: 2025-11-25 16:22:19
+
+   Se creó el archivo aaaa (ID 1), Fecha/Hora: 2025-11-25 16:22:19
+
+   Se creó el archivo aaaa (ID 1), Fecha/Hora: 2025-11-25 16:22:19
+
+   Se creó el archivo aaaa (ID 1), Fecha/Hora: 2025-11-25 16:22:19
+
+   Se creó el archivo aaaa (ID 1), Fecha/Hora: 2025-11-25 16:22:19
+
+   Se eliminó el archivo aaaa (ID 1), Fecha/Hora: 2025-11-25 16:22:41
+
+   Se eliminó el archivo aaaa (ID 1), Fecha/Hora: 2025-11-25 16:22:41
+
+   Se eliminó el archivo aaaa (ID 1), Fecha/Hora: 2025-11-25 16:22:41
+
+   Se eliminó el archivo aaaa (ID 1), Fecha/Hora: 2025-11-25 16:22:41
+
+   Se eliminó el archivo aaaa (ID 1), Fecha/Hora: 2025-11-25 16:22:41
+
+   Se eliminó el archivo aaaa (ID 1), Fecha/Hora: 2025-11-25 16:22:41
+
+   Se creó la carpeta CCCC, Fecha/Hora: 2025-11-25 16:22:57
+
+   Se creó el archivo aaaa (ID 2), Fecha/Hora: 2025-11-25 16:23:26
+
+   Se creó el archivo aaaa (ID 2), Fecha/Hora: 2025-11-25 16:23:26
+
+   Se creó el archivo aaaa (ID 2), Fecha/Hora: 2025-11-25 16:23:26
+
+   Se creó el archivo aaaa (ID 2), Fecha/Hora: 2025-11-25 16:23:26
+
+   Se creó el archivo aaaa (ID 2), Fecha/Hora: 2025-11-25 16:23:26
+
+   Se creó el archivo aaaa (ID 2), Fecha/Hora: 2025-11-25 16:23:26
+
+   Se creó el archivo aaaa (ID 2), Fecha/Hora: 2025-11-25 16:23:26
+
+   Se creó el archivo aaaa (ID 2), Fecha/Hora: 2025-11-25 16:23:26
+
+   Se creó la carpeta AaAa, Fecha/Hora: 2025-11-25 16:23:54
+
+   Se creó el archivo a,a,a, (ID 3), Fecha/Hora: 2025-11-25 16:24:26
+
+   Se creó el archivo a,a,a, (ID 3), Fecha/Hora: 2025-11-25 16:24:26
+
+   Se creó el archivo a,a,a, (ID 3), Fecha/Hora: 2025-11-25 16:24:26
+
+   Se creó el archivo a,a,a, (ID 3), Fecha/Hora: 2025-11-25 16:24:26
+
+   Se renombró el archivo a,a,a, (ID 3) a aaa, Fecha/Hora: 2025-11-25 16:24:56
+
+   Se modificó el archivo aaa (ID 3), Fecha/Hora: 2025-11-25 16:25:06

@@ -7,7 +7,7 @@
       "posicioni": 0,
       "posicionj": 5,
       "contenido": "1",
-      "color": "Amarillo"
+      "color": "amarillo"
     },
     "pNext": {
       "tInfo": {
@@ -17,7 +17,7 @@
         "posicioni": 0,
         "posicionj": 6,
         "contenido": "1",
-        "color": "Amarillo"
+        "color": "amarillo"
       },
       "pNext": {
         "tInfo": {
@@ -27,7 +27,7 @@
           "posicioni": 0,
           "posicionj": 7,
           "contenido": "1",
-          "color": "Amarillo"
+          "color": "amarillo"
         },
         "pNext": {
           "tInfo": {
@@ -37,7 +37,7 @@
             "posicioni": 1,
             "posicionj": 0,
             "contenido": "1",
-            "color": "Amarillo"
+            "color": "amarillo"
           },
           "pNext": {
             "tInfo": {
@@ -47,7 +47,7 @@
               "posicioni": 1,
               "posicionj": 1,
               "contenido": "1",
-              "color": "Amarillo"
+              "color": "amarillo"
             },
             "pNext": {
               "tInfo": {
@@ -57,7 +57,7 @@
                 "posicioni": 1,
                 "posicionj": 2,
                 "contenido": "1",
-                "color": "Amarillo"
+                "color": "amarillo"
               },
               "pNext": {
                 "tInfo": {
@@ -67,7 +67,7 @@
                   "posicioni": 1,
                   "posicionj": 3,
                   "contenido": "1",
-                  "color": "Amarillo"
+                  "color": "amarillo"
                 },
                 "pNext": {
                   "tInfo": {
@@ -77,7 +77,7 @@
                     "posicioni": 1,
                     "posicionj": 4,
                     "contenido": "3",
-                    "color": "Azul"
+                    "color": "azul"
                   },
                   "pNext": {
                     "tInfo": {
@@ -87,7 +87,7 @@
                       "posicioni": 1,
                       "posicionj": 5,
                       "contenido": "3",
-                      "color": "Azul"
+                      "color": "azul"
                     },
                     "pNext": {
                       "tInfo": {
@@ -97,7 +97,7 @@
                         "posicioni": 1,
                         "posicionj": 6,
                         "contenido": "3",
-                        "color": "Azul"
+                        "color": "azul"
                       },
                       "pNext": {
                         "tInfo": {
@@ -107,7 +107,7 @@
                           "posicioni": 1,
                           "posicionj": 7,
                           "contenido": "3",
-                          "color": "Azul"
+                          "color": "azul"
                         },
                         "pNext": {
                           "tInfo": {
@@ -117,7 +117,7 @@
                             "posicioni": 2,
                             "posicionj": 0,
                             "contenido": "3",
-                            "color": "Azul"
+                            "color": "azul"
                           },
                           "pNext": {
                             "tInfo": {
@@ -127,7 +127,7 @@
                               "posicioni": 2,
                               "posicionj": 1,
                               "contenido": "3",
-                              "color": "Azul"
+                              "color": "azul"
                             },
                             "pNext": {
                               "tInfo": {
@@ -137,7 +137,7 @@
                                 "posicioni": 2,
                                 "posicionj": 2,
                                 "contenido": "3",
-                                "color": "Azul"
+                                "color": "azul"
                               },
                               "pNext": {
                                 "tInfo": {
@@ -147,7 +147,7 @@
                                   "posicioni": 2,
                                   "posicionj": 3,
                                   "contenido": "4",
-                                  "color": "Cyan claro"
+                                  "color": "cyanclaro"
                                 },
                                 "pNext": {
                                   "tInfo": {
@@ -157,7 +157,7 @@
                                     "posicioni": 2,
                                     "posicionj": 4,
                                     "contenido": "4",
-                                    "color": "Cyan claro"
+                                    "color": "cyanclaro"
                                   },
                                   "pNext": {
                                     "tInfo": {
@@ -167,7 +167,7 @@
                                       "posicioni": 2,
                                       "posicionj": 5,
                                       "contenido": "4",
-                                      "color": "Cyan claro"
+                                      "color": "cyanclaro"
                                     },
                                     "pNext": {
                                       "tInfo": {
@@ -177,7 +177,7 @@
                                         "posicioni": 2,
                                         "posicionj": 6,
                                         "contenido": "4",
-                                        "color": "Cyan claro"
+                                        "color": "cyanclaro"
                                       },
                                       "pNext": {
                                         "tInfo": {
@@ -187,7 +187,7 @@
                                           "posicioni": 2,
                                           "posicionj": 7,
                                           "contenido": "4",
-                                          "color": "Cyan claro"
+                                          "color": "cyanclaro"
                                         },
                                         "pNext": {
                                           "tInfo": {
@@ -197,7 +197,7 @@
                                             "posicioni": 3,
                                             "posicionj": 0,
                                             "contenido": "4",
-                                            "color": "Cyan claro"
+                                            "color": "cyanclaro"
                                           },
                                           "pNext": {
                                             "tInfo": {
@@ -207,7 +207,7 @@
                                               "posicioni": 3,
                                               "posicionj": 1,
                                               "contenido": "4",
-                                              "color": "Cyan claro"
+                                              "color": "cyanclaro"
                                             },
                                             "pNext": {
                                               "tInfo": {
@@ -217,7 +217,7 @@
                                                 "posicioni": 3,
                                                 "posicionj": 2,
                                                 "contenido": "4",
-                                                "color": "Cyan claro"
+                                                "color": "cyanclaro"
                                               }
                                             }
                                           }

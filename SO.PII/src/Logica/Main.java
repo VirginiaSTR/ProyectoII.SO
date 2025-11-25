@@ -2,25 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-
-
-
-/*
-
-*/
-
-package Main;
-
+package Logica;
 import GUI.Pantalla;
-import Clases.Archivo;
-import Estructuras.Lista;
+import Logica.Clases.Archivo;
+import Logica.Estructuras.Lista;
 
 /**
  *
  * @author VirginiaT
  */
-
-
 public class Main {
 
     /**
@@ -34,5 +24,3 @@ public class Main {
     }
     
 }
-
-

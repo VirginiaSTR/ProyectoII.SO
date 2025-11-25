@@ -1,5 +1,5 @@
 {
-  "nombre": "Núcleo",
+  "nombre": "Raíz",
   "esCarpeta": true,
   "hijos": {
     "pFirst": {
@@ -24,7 +24,7 @@
                     "longitud": 5,
                     "posicioni": 0,
                     "posicionj": 0,
-                    "color": "Rojo claro"
+                    "color": "rojoclaro"
                   },
                   "pNext": {
                     "tInfo": {
@@ -38,7 +38,7 @@
                       "longitud": 8,
                       "posicioni": 2,
                       "posicionj": 3,
-                      "color": "Cyan claro"
+                      "color": "cyanclaro"
                     },
                     "pNext": {
                       "tInfo": {
@@ -52,7 +52,7 @@
                         "longitud": 3,
                         "posicioni": 3,
                         "posicionj": 3,
-                        "color": "Negro"
+                        "color": "negro"
                       }
                     }
                   }
@@ -76,7 +76,7 @@
                 "longitud": 7,
                 "posicioni": 0,
                 "posicionj": 5,
-                "color": "Amarillo"
+                "color": "amarillo"
               }
             }
           },

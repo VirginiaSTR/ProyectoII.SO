@@ -9,12 +9,12 @@ package GUI;
  * @author VirginiaT
  */
 
-public class RegFrame extends javax.swing.JFrame {
+public class LogFrame extends javax.swing.JFrame {
 
     /**
      * Creates new form LogFrame
      */
-    public RegFrame() {
+    public LogFrame() {
         initComponents();
     }
 
