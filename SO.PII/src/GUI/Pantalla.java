@@ -969,9 +969,9 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
             sb.append(registro).append("\n");
         }
 
-        RegFrame logFrame = new RegFrame(); // Crea una instancia del LogFrame
-        logFrame.logTextArea.setText(sb.toString()); // Establece el texto del JTextArea
-        logFrame.setVisible(true); // Hace visible el JFrame
+        RegFrame RegFrame = new RegFrame(); // Crea una instancia del RegFrame
+        RegFrame.logTextArea.setText(sb.toString()); // Establece el texto del JTextArea
+        RegFrame.setVisible(true); // Hace visible el JFrame
         
     }//GEN-LAST:event_btnLogActionPerformed
 
