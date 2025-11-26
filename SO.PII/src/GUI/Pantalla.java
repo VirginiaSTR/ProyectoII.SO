@@ -31,6 +31,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+//import Exportaciones.gson-2.8.2.jar;
+
 
 /**
  *
@@ -640,11 +642,11 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
                     if (longitud > 0) {
                         
                         String[] colores = {
-                            "Negro", "blanco", "rojo", "rojoclaro", "rojooscuro",
-                            "verde", "verdeclaro", "verdeoscuro", "azul", "azulclaro", "azuloscuro",
-                            "amarillo", "amarilloclaro", "amarillooscuro", "cyan", "cyanclaro", "cyanoscuro",
-                            "magenta", "magentaclaro", "magentaoscuro", "grisoscuro", "gris", "grisclaro",
-                            "naranja", "naranjaclaro", "naranjaoscuro", "rosa", "rosaoscuro"
+                            "Negro", "Blanco", "Rojo", "Rojo claro", "Rojo Oscuro",
+                            "Verde", "Verde claro", "Verde oscuro", "Azul", "Azul claro", "Azul oscuro",
+                            "Amarillo", "Amarillo claro", "Amarillo Oscuro", "Cyan", "Cyan claro", "Cyan oscuro",
+                            "Magenta", "Magenta claro", "Magenta oscuro", "Gris oscuro", "Gris", "Gris claro",
+                            "Naranja", "Naranja claro", "Naranja oscuro", "Rosa", "Rosa oscuro"
                         };
 
                         JComboBox<String> colorComboBox = new JComboBox<>(colores);

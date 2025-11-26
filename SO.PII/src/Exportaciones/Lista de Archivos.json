@@ -1,239 +1,63 @@
 {
   "pFirst": {
     "tInfo": {
-      "nombre": "Archivo1",
-      "id": 2,
-      "longitud": 7,
+      "nombre": "dsds",
+      "id": 1,
+      "longitud": 6,
       "posicioni": 0,
-      "posicionj": 5,
-      "contenido": "1",
-      "color": "amarillo"
+      "posicionj": 0,
+      "contenido": "dsdsd",
+      "color": "Negro"
     },
     "pNext": {
       "tInfo": {
-        "nombre": "Archivo1",
-        "id": 2,
-        "longitud": 7,
+        "nombre": "dsds",
+        "id": 1,
+        "longitud": 6,
         "posicioni": 0,
-        "posicionj": 6,
-        "contenido": "1",
-        "color": "amarillo"
+        "posicionj": 1,
+        "contenido": "dsdsd",
+        "color": "Negro"
       },
       "pNext": {
         "tInfo": {
-          "nombre": "Archivo1",
-          "id": 2,
-          "longitud": 7,
+          "nombre": "dsds",
+          "id": 1,
+          "longitud": 6,
           "posicioni": 0,
-          "posicionj": 7,
-          "contenido": "1",
-          "color": "amarillo"
+          "posicionj": 2,
+          "contenido": "dsdsd",
+          "color": "Negro"
         },
         "pNext": {
           "tInfo": {
-            "nombre": "Archivo1",
-            "id": 2,
-            "longitud": 7,
-            "posicioni": 1,
-            "posicionj": 0,
-            "contenido": "1",
-            "color": "amarillo"
+            "nombre": "dsds",
+            "id": 1,
+            "longitud": 6,
+            "posicioni": 0,
+            "posicionj": 3,
+            "contenido": "dsdsd",
+            "color": "Negro"
           },
           "pNext": {
             "tInfo": {
-              "nombre": "Archivo1",
-              "id": 2,
-              "longitud": 7,
-              "posicioni": 1,
-              "posicionj": 1,
-              "contenido": "1",
-              "color": "amarillo"
+              "nombre": "dsds",
+              "id": 1,
+              "longitud": 6,
+              "posicioni": 0,
+              "posicionj": 4,
+              "contenido": "dsdsd",
+              "color": "Negro"
             },
             "pNext": {
               "tInfo": {
-                "nombre": "Archivo1",
-                "id": 2,
-                "longitud": 7,
-                "posicioni": 1,
-                "posicionj": 2,
-                "contenido": "1",
-                "color": "amarillo"
-              },
-              "pNext": {
-                "tInfo": {
-                  "nombre": "Archivo1",
-                  "id": 2,
-                  "longitud": 7,
-                  "posicioni": 1,
-                  "posicionj": 3,
-                  "contenido": "1",
-                  "color": "amarillo"
-                },
-                "pNext": {
-                  "tInfo": {
-                    "nombre": "Archivo3",
-                    "id": 3,
-                    "longitud": 7,
-                    "posicioni": 1,
-                    "posicionj": 4,
-                    "contenido": "3",
-                    "color": "azul"
-                  },
-                  "pNext": {
-                    "tInfo": {
-                      "nombre": "Archivo3",
-                      "id": 3,
-                      "longitud": 7,
-                      "posicioni": 1,
-                      "posicionj": 5,
-                      "contenido": "3",
-                      "color": "azul"
-                    },
-                    "pNext": {
-                      "tInfo": {
-                        "nombre": "Archivo3",
-                        "id": 3,
-                        "longitud": 7,
-                        "posicioni": 1,
-                        "posicionj": 6,
-                        "contenido": "3",
-                        "color": "azul"
-                      },
-                      "pNext": {
-                        "tInfo": {
-                          "nombre": "Archivo3",
-                          "id": 3,
-                          "longitud": 7,
-                          "posicioni": 1,
-                          "posicionj": 7,
-                          "contenido": "3",
-                          "color": "azul"
-                        },
-                        "pNext": {
-                          "tInfo": {
-                            "nombre": "Archivo3",
-                            "id": 3,
-                            "longitud": 7,
-                            "posicioni": 2,
-                            "posicionj": 0,
-                            "contenido": "3",
-                            "color": "azul"
-                          },
-                          "pNext": {
-                            "tInfo": {
-                              "nombre": "Archivo3",
-                              "id": 3,
-                              "longitud": 7,
-                              "posicioni": 2,
-                              "posicionj": 1,
-                              "contenido": "3",
-                              "color": "azul"
-                            },
-                            "pNext": {
-                              "tInfo": {
-                                "nombre": "Archivo3",
-                                "id": 3,
-                                "longitud": 7,
-                                "posicioni": 2,
-                                "posicionj": 2,
-                                "contenido": "3",
-                                "color": "azul"
-                              },
-                              "pNext": {
-                                "tInfo": {
-                                  "nombre": "Archivo4",
-                                  "id": 4,
-                                  "longitud": 8,
-                                  "posicioni": 2,
-                                  "posicionj": 3,
-                                  "contenido": "4",
-                                  "color": "cyanclaro"
-                                },
-                                "pNext": {
-                                  "tInfo": {
-                                    "nombre": "Archivo4",
-                                    "id": 4,
-                                    "longitud": 8,
-                                    "posicioni": 2,
-                                    "posicionj": 4,
-                                    "contenido": "4",
-                                    "color": "cyanclaro"
-                                  },
-                                  "pNext": {
-                                    "tInfo": {
-                                      "nombre": "Archivo4",
-                                      "id": 4,
-                                      "longitud": 8,
-                                      "posicioni": 2,
-                                      "posicionj": 5,
-                                      "contenido": "4",
-                                      "color": "cyanclaro"
-                                    },
-                                    "pNext": {
-                                      "tInfo": {
-                                        "nombre": "Archivo4",
-                                        "id": 4,
-                                        "longitud": 8,
-                                        "posicioni": 2,
-                                        "posicionj": 6,
-                                        "contenido": "4",
-                                        "color": "cyanclaro"
-                                      },
-                                      "pNext": {
-                                        "tInfo": {
-                                          "nombre": "Archivo4",
-                                          "id": 4,
-                                          "longitud": 8,
-                                          "posicioni": 2,
-                                          "posicionj": 7,
-                                          "contenido": "4",
-                                          "color": "cyanclaro"
-                                        },
-                                        "pNext": {
-                                          "tInfo": {
-                                            "nombre": "Archivo4",
-                                            "id": 4,
-                                            "longitud": 8,
-                                            "posicioni": 3,
-                                            "posicionj": 0,
-                                            "contenido": "4",
-                                            "color": "cyanclaro"
-                                          },
-                                          "pNext": {
-                                            "tInfo": {
-                                              "nombre": "Archivo4",
-                                              "id": 4,
-                                              "longitud": 8,
-                                              "posicioni": 3,
-                                              "posicionj": 1,
-                                              "contenido": "4",
-                                              "color": "cyanclaro"
-                                            },
-                                            "pNext": {
-                                              "tInfo": {
-                                                "nombre": "Archivo4",
-                                                "id": 4,
-                                                "longitud": 8,
-                                                "posicioni": 3,
-                                                "posicionj": 2,
-                                                "contenido": "4",
-                                                "color": "cyanclaro"
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
+                "nombre": "dsds",
+                "id": 1,
+                "longitud": 6,
+                "posicioni": 0,
+                "posicionj": 5,
+                "contenido": "dsdsd",
+                "color": "Negro"
               }
             }
           }
@@ -242,5 +66,5 @@
     }
   },
   "name": "Archivos",
-  "iN": 22
+  "iN": 6
 }

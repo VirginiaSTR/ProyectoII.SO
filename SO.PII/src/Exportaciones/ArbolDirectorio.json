@@ -4,92 +4,47 @@
   "hijos": {
     "pFirst": {
       "tInfo": {
-        "nombre": "Carpeta1",
+        "nombre": "ldsds",
         "esCarpeta": true,
         "hijos": {
           "pFirst": {
             "tInfo": {
-              "nombre": "Carpeta2",
+              "nombre": "aAFDF",
               "esCarpeta": true,
               "hijos": {
-                "pFirst": {
-                  "tInfo": {
-                    "nombre": "Archivo2",
-                    "esCarpeta": false,
-                    "hijos": {
-                      "name": "Hijos",
-                      "iN": 0
-                    },
-                    "contenido": "2",
-                    "longitud": 5,
-                    "posicioni": 0,
-                    "posicionj": 0,
-                    "color": "rojoclaro"
-                  },
-                  "pNext": {
-                    "tInfo": {
-                      "nombre": "Archivo4",
-                      "esCarpeta": false,
-                      "hijos": {
-                        "name": "Hijos",
-                        "iN": 0
-                      },
-                      "contenido": "4",
-                      "longitud": 8,
-                      "posicioni": 2,
-                      "posicionj": 3,
-                      "color": "cyanclaro"
-                    },
-                    "pNext": {
-                      "tInfo": {
-                        "nombre": "Archivo5",
-                        "esCarpeta": false,
-                        "hijos": {
-                          "name": "Hijos",
-                          "iN": 0
-                        },
-                        "contenido": "5",
-                        "longitud": 3,
-                        "posicioni": 3,
-                        "posicionj": 3,
-                        "color": "negro"
-                      }
-                    }
-                  }
-                },
                 "name": "Hijos",
-                "iN": 3
+                "iN": 0
               },
               "longitud": 0,
               "posicioni": 0,
               "posicionj": 0
-            },
-            "pNext": {
-              "tInfo": {
-                "nombre": "Archivo1",
-                "esCarpeta": false,
-                "hijos": {
-                  "name": "Hijos",
-                  "iN": 0
-                },
-                "contenido": "1",
-                "longitud": 7,
-                "posicioni": 0,
-                "posicionj": 5,
-                "color": "amarillo"
-              }
             }
           },
           "name": "Hijos",
-          "iN": 2
+          "iN": 1
         },
         "longitud": 0,
         "posicioni": 0,
         "posicionj": 0
+      },
+      "pNext": {
+        "tInfo": {
+          "nombre": "dsds",
+          "esCarpeta": false,
+          "hijos": {
+            "name": "Hijos",
+            "iN": 0
+          },
+          "contenido": "dsdsd",
+          "longitud": 6,
+          "posicioni": 0,
+          "posicionj": 0,
+          "color": "Negro"
+        }
       }
     },
     "name": "Hijos",
-    "iN": 1
+    "iN": 2
   },
   "longitud": 0,
   "posicioni": 0,
