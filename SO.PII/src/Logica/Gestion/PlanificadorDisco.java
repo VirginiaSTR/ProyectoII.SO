@@ -18,6 +18,7 @@ package Logica.Gestion;
  * solicitudes de acceso a bloques (representadas por SolicitudES). El objetivo
  * es minimizar el movimiento del cabezal simulado.
  * 
+ * 
  */
 
 
