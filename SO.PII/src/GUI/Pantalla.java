@@ -172,7 +172,7 @@ public class Pantalla extends javax.swing.JFrame {
         jScrollPane2.setBounds(30, 60, 440, 210);
 
         btnCrearArchivo.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnCrearArchivo.setText("Crear archivo");
+        btnCrearArchivo.setText("Crear Archivo");
         btnCrearArchivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCrearArchivoActionPerformed(evt);
@@ -202,7 +202,7 @@ public class Pantalla extends javax.swing.JFrame {
         btnEliminar.setBounds(480, 120, 170, 30);
 
         btnModificarContenido.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnModificarContenido.setText("Modificar contenido");
+        btnModificarContenido.setText("Modificar Contenido");
         btnModificarContenido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnModificarContenidoActionPerformed(evt);
@@ -212,7 +212,7 @@ public class Pantalla extends javax.swing.JFrame {
         btnModificarContenido.setBounds(480, 200, 170, 30);
 
         btnModificarNombre.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnModificarNombre.setText("Modificar nombre");
+        btnModificarNombre.setText("Modificar Nombre");
         btnModificarNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnModificarNombreActionPerformed(evt);
@@ -232,7 +232,7 @@ public class Pantalla extends javax.swing.JFrame {
         btnModo.setBounds(30, 20, 100, 30);
 
         btnLog.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnLog.setText("Log de operaciones");
+        btnLog.setText("Log de Operaciones");
         btnLog.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLogActionPerformed(evt);
