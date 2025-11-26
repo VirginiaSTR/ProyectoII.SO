@@ -25,14 +25,10 @@ package Logica.Gestion;
 import Logica.Modelo.SolicitudES; 
 
 
-
 public class ColaES {
     
-    
-   
     // ESTRUCTURA INTERNA DE LA COLA (Lista Enlazada Propia)
     
-
     /**
      * Clase interna que representa un nodo en la cola enlazada.
      */
