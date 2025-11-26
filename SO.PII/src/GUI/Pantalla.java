@@ -107,6 +107,7 @@ public class Pantalla extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
         jPanel1.setLayout(null);
 
         SDtable.setModel(new javax.swing.table.DefaultTableModel(
@@ -151,7 +152,7 @@ public class Pantalla extends javax.swing.JFrame {
         }
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(30, 370, 560, 140);
+        jScrollPane1.setBounds(20, 370, 560, 140);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Estado del SD");
@@ -246,7 +247,7 @@ public class Pantalla extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnImportarArchivos);
-        btnImportarArchivos.setBounds(940, 520, 170, 30);
+        btnImportarArchivos.setBounds(860, 530, 170, 30);
 
         btnExportarArchivos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnExportarArchivos.setText("Exportar Archivos");
@@ -256,7 +257,7 @@ public class Pantalla extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnExportarArchivos);
-        btnExportarArchivos.setBounds(760, 520, 170, 30);
+        btnExportarArchivos.setBounds(680, 530, 170, 30);
 
         btnImportarArbol.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnImportarArbol.setText("Importar JTree");
@@ -266,7 +267,7 @@ public class Pantalla extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnImportarArbol);
-        btnImportarArbol.setBounds(220, 280, 170, 30);
+        btnImportarArbol.setBounds(250, 280, 170, 30);
 
         btnExportarArbol.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnExportarArbol.setText("Exportar JTree");
@@ -276,7 +277,7 @@ public class Pantalla extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnExportarArbol);
-        btnExportarArbol.setBounds(40, 280, 170, 30);
+        btnExportarArbol.setBounds(70, 280, 170, 30);
 
         tablaAsignacionArchivos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -300,7 +301,7 @@ public class Pantalla extends javax.swing.JFrame {
         jScrollPane3.setViewportView(tablaAsignacionArchivos);
 
         jPanel1.add(jScrollPane3);
-        jScrollPane3.setBounds(610, 370, 500, 140);
+        jScrollPane3.setBounds(600, 370, 500, 140);
 
         btnLogBackup.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnLogBackup.setText("Respaldar Log");
