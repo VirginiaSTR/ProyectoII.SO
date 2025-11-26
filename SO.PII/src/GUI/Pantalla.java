@@ -313,10 +313,10 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(btnLogBackup);
         btnLogBackup.setBounds(480, 280, 170, 30);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos Gráficos/thumbsUp.jpg"))); // NOI18N
-        jLabel2.setText("jLabel2");
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos Gráficos/Buffer1.PNG"))); // NOI18N
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(760, 60, 240, 240);
+        jLabel2.setBounds(700, 40, 380, 294);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
