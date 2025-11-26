@@ -19,6 +19,7 @@ package Logica.Gestion;
  *
  * Incluye métodos para las operaciones básicas de cola y un método de remoción selectiva,
  * necesario para que el PlanificadorDisco pueda implementar políticas no-FIFO (SSTF, SCAN, C-SCAN).
+ * 
  */
 
 
