@@ -13,7 +13,6 @@ import Logica.Modelo.SolicitudES;
 
 public class PlanificadorDisco {
     
-    
     // Constantes de Políticas (Mínimo 4 Requeridas) [cite: 51]
     public static final String FIFO = "FIFO";
     public static final String SSTF = "SSTF";
@@ -264,5 +263,6 @@ public class PlanificadorDisco {
     public int getCabezalActual() {
         return cabezalActual;
     }
+    
     
 }

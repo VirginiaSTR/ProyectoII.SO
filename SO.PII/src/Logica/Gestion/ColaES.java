@@ -98,6 +98,8 @@ public class ColaES {
     * Este método es usado por el PlanificadorDisco para ejecutar políticas no-FIFO.
     * @param solicitudAEliminar La SolicitudES a remover.
     */
+    
+    
    public void removerSolicitud(SolicitudES solicitudAEliminar) {
        if (this.frente == null) {
            return; // Cola vacía
