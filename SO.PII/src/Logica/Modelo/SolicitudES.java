@@ -8,6 +8,17 @@ package Logica.Modelo;
  *
  * @author VirginiaT
  */
+
+
+/**
+ * Clase SolicitudES (Solicitud de Entrada/Salida).
+ *
+ * Esta clase encapsula la información detallada de una operación de I/O que un
+ * Proceso requiere ejecutar. Define el tipo de acción (CREAR, LEER, ACTUALIZAR, ELIMINAR)
+ * y los parámetros necesarios para llevarla a cabo en el sistema de archivos simulado.
+ */
+
+
 public class SolicitudES {
     
     // Constantes de Operación (CRUD)

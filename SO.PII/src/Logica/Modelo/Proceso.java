@@ -9,6 +9,15 @@ package Logica.Modelo;
  * @author VirginiaT
  */
 
+/**
+ * Clase Proceso.
+ *
+ * Representa una unidad de trabajo (proceso) en el simulador del sistema operativo.
+ * Se utiliza principalmente para modelar las solicitudes de Entrada/Salida (E/S)
+ * de los usuarios, la gestión de permisos y el ciclo de vida del proceso
+ * (Nuevo, Listo, Ejecutando, Bloqueado, Terminado).
+ */
+
 
 // Importamos SolicitudES que usaremos para el proceso
 import Logica.Modelo.SolicitudES; 

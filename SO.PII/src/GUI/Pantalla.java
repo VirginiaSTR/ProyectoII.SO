@@ -7,9 +7,11 @@ package GUI;
 import javax.swing.JOptionPane;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
+
 import Logica.Estructuras.Lista;
 import Logica.Clases.Archivo;
 import Logica.Clases.TreeNodeData;
+
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Point;
@@ -37,6 +39,18 @@ import java.io.IOException;
 /**
  *
  * @author VirginiaT
+ */
+
+
+/**
+ * Clase Pantalla (SimuladorGUI).
+ *
+ * Clase principal del simulador que extiende javax.swing.JFrame.
+ * Es responsable de la gestión de la Interfaz Gráfica de Usuario (GUI),
+ * incluyendo la visualización del Sistema de Archivos Jerárquico (JTree),
+ * la simulación del Disco (SDtable), la tabla de asignación de archivos (tablaAsignacionArchivos),
+ * y el manejo de todas las interacciones del usuario (operaciones CRUD y cambio de modo).
+ * Actúa como el controlador de la vista principal del sistema.
  */
 
 public class Pantalla extends javax.swing.JFrame {

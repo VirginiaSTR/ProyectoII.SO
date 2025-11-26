@@ -11,6 +11,19 @@ import Logica.Estructuras.Lista;
  * @author VirginiaT
  */
 
+/**
+ * Clase TreeNodeData.
+ *
+ * Clase de soporte utilizada para serializar (guardar) y deserializar (cargar)
+ * la estructura jerárquica del sistema de archivos, representada visualmente
+ * por el JTree.
+ *
+ * Un objeto TreeNodeData puede representar tanto una carpeta como un archivo,
+ * almacenando los metadatos necesarios para reconstruir el árbol y la información
+ * de asignación de bloques.
+ */
+
+
 public class TreeNodeData {
     private String nombre;
     private boolean esCarpeta;

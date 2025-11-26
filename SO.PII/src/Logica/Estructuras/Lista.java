@@ -12,6 +12,21 @@ package Logica.Estructuras;
 
  */
 
+
+/**
+ * Clase Lista<T>.
+ *
+ * Implementación de una lista enlazada simple genérica. Esta clase es fundamental
+ * para la gestión de colecciones dinámicas de objetos dentro del simulador,
+ * como la lista principal de archivos (Lista<Archivo>) y las estructuras de
+ * nodos jerárquicos (Lista<TreeNodeData>).
+ *
+ * La implementación es genérica (usa <T>), permitiendo almacenar cualquier tipo de objeto.
+ *
+ * @param <T> El tipo de elementos que contendrá la lista.
+ */
+
+
 public class Lista <T>{
     private Nodo <T> pFirst;
     private String name;

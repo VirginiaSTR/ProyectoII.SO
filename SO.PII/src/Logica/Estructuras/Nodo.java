@@ -9,6 +9,16 @@ package Logica.Estructuras;
  * @author VirginiaT
  */
 
+/**
+ * Clase Nodo<T>.
+ *
+ * Representa un nodo individual en la implementación de la lista enlazada simple genérica (Clase Lista).
+ * Cada nodo almacena un elemento de dato y una referencia al siguiente nodo en la secuencia.
+ * Es la base fundamental para la construcción dinámica de la lista.
+ *
+ * @param <T> El tipo de dato que almacenará el nodo.
+ */
+
 public class Nodo <T>{
     private T tInfo;
     private Nodo <T> pNext;

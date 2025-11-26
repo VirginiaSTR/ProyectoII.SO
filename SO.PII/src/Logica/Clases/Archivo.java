@@ -9,6 +9,14 @@ package Logica.Clases;
  * @author VirginiaT
  */
 
+/**
+ * Clase Archivo.
+ *
+ * Representa un archivo individual dentro del Sistema de Archivos Simulado.
+ * Almacena todos los metadatos necesarios para su gestión, su ubicación en la simulación
+ * del disco (SDtable) y el contenido asociado.
+ */
+
 public class Archivo {
     
     private String nombre;

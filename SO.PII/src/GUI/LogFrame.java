@@ -9,6 +9,16 @@ package GUI;
  * @author VirginiaT
  */
 
+/**
+ * Clase LogFrame (Registro de Eventos).
+ *
+ * Esta clase extiende javax.swing.JFrame y proporciona una ventana de interfaz gráfica
+ * de usuario (GUI) dedicada a mostrar un registro (log) de todas las operaciones y
+ * eventos importantes que ocurren en el simulador de sistema de archivos.
+ * Esto incluye la creación/eliminación de procesos, el resultado de las operaciones CRUD,
+ * y la atención de solicitudes por parte del planificador de disco.
+ */
+
 public class LogFrame extends javax.swing.JFrame {
 
     /**
