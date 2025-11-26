@@ -14,6 +14,7 @@ import Logica.Estructuras.Lista;
 
 
 /**
+ * 
  * Clase Main.
  *
  * Esta es la clase principal que contiene el método 'main', el punto de entrada
@@ -22,6 +23,7 @@ import Logica.Estructuras.Lista;
  * Se encarga de:
  * 1. Inicializar las estructuras de datos fundamentales (como la lista de Archivos).
  * 2. Crear y hacer visible la interfaz gráfica principal (Clase Pantalla).
+ * 
  */
 
 
