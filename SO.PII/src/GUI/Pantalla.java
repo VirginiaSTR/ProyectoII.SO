@@ -800,6 +800,11 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
         
     }//GEN-LAST:event_btnEliminarActionPerformed
 
+    
+    // Creación de nodos con DefaultMutableTreeNode
+    
+    // Agrupar nodos con jTree
+    
     private void btnModificarNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarNombreActionPerformed
         
         DefaultMutableTreeNode nodoSeleccionado = (DefaultMutableTreeNode) jTree1.getLastSelectedPathComponent();
