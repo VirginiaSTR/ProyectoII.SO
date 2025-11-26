@@ -48,6 +48,7 @@ public class Pantalla extends javax.swing.JFrame {
     
     
     public Pantalla(Lista<Archivo> listaArchivos) {
+        
         initComponents();
         
         raiz = new DefaultMutableTreeNode("Raíz");
@@ -611,7 +612,11 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
     }
     return idMasGrande;
 }
+
+
+    // Creación de nodos con DefaultMutableTreeNode
     
+    // Agrupar nodos con jTree    
     
     private void btnCrearArchivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearArchivoActionPerformed
         
@@ -635,7 +640,7 @@ public class CeldaColorEspecificoRenderer extends DefaultTableCellRenderer {
                     if (longitud > 0) {
                         
                         String[] colores = {
-                            "negro", "blanco", "rojo", "rojoclaro", "rojooscuro",
+                            "Negro", "blanco", "rojo", "rojoclaro", "rojooscuro",
                             "verde", "verdeclaro", "verdeoscuro", "azul", "azulclaro", "azuloscuro",
                             "amarillo", "amarilloclaro", "amarillooscuro", "cyan", "cyanclaro", "cyanoscuro",
                             "magenta", "magentaclaro", "magentaoscuro", "grisoscuro", "gris", "grisclaro",
