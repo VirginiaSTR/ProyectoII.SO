@@ -8,6 +8,7 @@ package Logica.Clases;
  *
  * @author VirginiaT
  */
+
 public class Archivo {
     
     private String nombre;

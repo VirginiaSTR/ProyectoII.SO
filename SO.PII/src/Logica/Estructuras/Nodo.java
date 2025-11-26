@@ -8,6 +8,7 @@ package Logica.Estructuras;
  *
  * @author VirginiaT
  */
+
 public class Nodo <T>{
     private T tInfo;
     private Nodo <T> pNext;

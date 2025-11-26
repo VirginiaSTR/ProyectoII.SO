@@ -10,6 +10,7 @@ import Logica.Estructuras.Lista;
  *
  * @author VirginiaT
  */
+
 public class TreeNodeData {
     private String nombre;
     private boolean esCarpeta;
