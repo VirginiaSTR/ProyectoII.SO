@@ -110,6 +110,7 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(153, 153, 255));
         jPanel1.setLayout(null);
 
+        SDtable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         SDtable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"", "", "", "", "", "", "", ""},
@@ -154,11 +155,12 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(jScrollPane1);
         jScrollPane1.setBounds(20, 370, 560, 140);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("Estado del SD");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(30, 330, 130, 25);
+        jLabel1.setBounds(30, 330, 130, 21);
 
+        jTree1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jTree1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTree1MouseClicked(evt);
@@ -169,7 +171,7 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(jScrollPane2);
         jScrollPane2.setBounds(30, 60, 440, 210);
 
-        btnCrearArchivo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnCrearArchivo.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnCrearArchivo.setText("Crear archivo");
         btnCrearArchivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -179,8 +181,8 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(btnCrearArchivo);
         btnCrearArchivo.setBounds(480, 80, 170, 30);
 
-        btnCrearCarpeta.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnCrearCarpeta.setText("Crear carpeta");
+        btnCrearCarpeta.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnCrearCarpeta.setText("Crear Carpeta");
         btnCrearCarpeta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCrearCarpetaActionPerformed(evt);
@@ -189,7 +191,7 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(btnCrearCarpeta);
         btnCrearCarpeta.setBounds(480, 40, 170, 30);
 
-        btnEliminar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnEliminar.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnEliminar.setText("Eliminar");
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -199,7 +201,7 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(btnEliminar);
         btnEliminar.setBounds(480, 120, 170, 30);
 
-        btnModificarContenido.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnModificarContenido.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnModificarContenido.setText("Modificar contenido");
         btnModificarContenido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -209,7 +211,7 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(btnModificarContenido);
         btnModificarContenido.setBounds(480, 200, 170, 30);
 
-        btnModificarNombre.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnModificarNombre.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnModificarNombre.setText("Modificar nombre");
         btnModificarNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -219,7 +221,7 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(btnModificarNombre);
         btnModificarNombre.setBounds(480, 160, 170, 30);
 
-        btnModo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnModo.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnModo.setText("Modo");
         btnModo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -229,7 +231,7 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(btnModo);
         btnModo.setBounds(30, 20, 100, 30);
 
-        btnLog.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnLog.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnLog.setText("Log de operaciones");
         btnLog.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -239,7 +241,7 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(btnLog);
         btnLog.setBounds(480, 240, 170, 30);
 
-        btnImportarArchivos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnImportarArchivos.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnImportarArchivos.setText("Importar Archivos");
         btnImportarArchivos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -249,7 +251,7 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(btnImportarArchivos);
         btnImportarArchivos.setBounds(860, 530, 170, 30);
 
-        btnExportarArchivos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnExportarArchivos.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnExportarArchivos.setText("Exportar Archivos");
         btnExportarArchivos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -259,7 +261,7 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(btnExportarArchivos);
         btnExportarArchivos.setBounds(680, 530, 170, 30);
 
-        btnImportarArbol.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnImportarArbol.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnImportarArbol.setText("Importar JTree");
         btnImportarArbol.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -269,7 +271,7 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(btnImportarArbol);
         btnImportarArbol.setBounds(250, 280, 170, 30);
 
-        btnExportarArbol.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnExportarArbol.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnExportarArbol.setText("Exportar JTree");
         btnExportarArbol.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -279,6 +281,7 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(btnExportarArbol);
         btnExportarArbol.setBounds(70, 280, 170, 30);
 
+        tablaAsignacionArchivos.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         tablaAsignacionArchivos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -303,7 +306,7 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel1.add(jScrollPane3);
         jScrollPane3.setBounds(600, 370, 500, 140);
 
-        btnLogBackup.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnLogBackup.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnLogBackup.setText("Respaldar Log");
         btnLogBackup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
