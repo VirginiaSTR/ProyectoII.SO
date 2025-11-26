@@ -17,6 +17,7 @@ package Logica.Gestion;
  * algoritmos de planificación para determinar el orden en que se atienden las
  * solicitudes de acceso a bloques (representadas por SolicitudES). El objetivo
  * es minimizar el movimiento del cabezal simulado.
+ * 
  */
 
 
